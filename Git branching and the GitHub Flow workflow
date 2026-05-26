@@ -1,0 +1,17 @@
+# Git branching and the GitHub Flow workflow
+
+Git is different than other VSC's. Instead of just capturing the deltas between commits, "snapshots" are taken. A reference is created to each snapshot when you commit changes. Everything is Git is checksummed before it is stored. <br>
+This means that Git has integrity. It is impossible to make any changes to a file, without Git knowing about it. We know who made what changes and when. Git uses SHA-1 for checksumming. This is a 40-character string composed of hexadecimal characters (0–9 and a–f) and calculated based on the contents of a file or directory structure in Git.<br>
+Git has three main states (This is important) - Modified, Staged, and Commited. <br>
+- Modified means that you have changed the file but have not committed it to your database yet.
+- Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
+- Committed means that the data is safely stored in your local database. <br>
+<br>
+
+## The Basic Git workflow <br>
+- You modify files in your working tree.
+- You selectively stage just those changes you want to be part of your next commit, which adds only those changes to the staging area.
+- You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.
+
+<br>
+// TODO: add notes for chapter 2 and 3
