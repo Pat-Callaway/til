@@ -1,0 +1,20 @@
+# How GitHub Pages Works with Custom Domains
+
+**Date:** 2026-05-26
+
+## What I Learned
+GitHub Pages can serve a static site from any repo named
+`<username>.github.io`. Adding a custom domain requires:
+
+1. A `CNAME` record pointing `www` to `<username>.github.io`
+2. Four `A` records pointing `@` to GitHub's IP addresses
+3. Entering the custom domain in Settings → Pages
+4. Checking "Enforce HTTPS" once the cert is provisioned
+
+## Why It Matters
+DNS propagation and TLS cert issuance are separate processes.
+The site can be live before GitHub's own DNS checker confirms — 
+the cert being active is the important signal.
+
+## Source
+- GitHub Docs: Managing a custom domain for your Pages site
